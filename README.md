@@ -8,23 +8,22 @@ This project was developed as the **Final Project** of the **Maju Bareng AI (Wav
 
 ## About The Project
 
-**0waste AI Assistant** is an intelligent chatbot designed to help customers interact with a food waste marketplace.
+**0waste AI Assistant** is an intelligent web-based chatbot designed to help customers interact with a food waste marketplace.
 
 The AI assistant provides:
-
 - Information about available leftover meals
 - Education about food waste and sustainability
-- Guidance for ordering food
-- Friendly and empathetic responses
+- Guidance for ordering food (Delivery or Pick-Up)
+- Friendly, empathetic, and context-aware responses
 
-The chatbot uses **Google Gemini API** to generate natural and informative responses for customers.
+The chatbot uses **Google Gemini API** (`gemini-3-flash-preview`) integrated via an **Express.js API** backend, and comes with a modern, responsive web interface.
 
 ---
 
 ## Key Features
 
-### 🤖 AI Customer Assistant
-Helps customers interact with the food waste platform naturally through conversation.
+### 🤖 Web-based AI Customer Assistant
+Helps customers interact with the food waste platform naturally through a beautifully designed web interface.
 
 ### 🌱 Environmental Education
 Explains the impact of food waste and promotes sustainable consumption.
@@ -34,19 +33,20 @@ Guides users about available ordering methods:
 - Delivery
 - Self Pick-Up
 
-### 💬 Empathetic Responses
-Configured with system instructions so the chatbot responds in a friendly and human-like tone.
+### 💬 Empathetic & Context-Aware Responses
+Configured with strict system instructions and conversation history mapping so the chatbot responds in a friendly tone without losing context.
 
 ### 🎨 Brand Awareness
-The AI understands the brand identity including tone and visual style.
+The AI understands the brand identity (*tone of voice*) and the frontend matches the visual style (Dark Blue `#40407a`).
 
 ---
 
 ## Tech Stack
 
-- **Node.js** — JavaScript runtime
-- **JavaScript** — Programming language
-- **Google Gemini API** — AI model
+- **Node.js** — JavaScript runtime environment
+- **Express.js** — Backend web framework
+- **Google Gemini API** — AI model for natural language processing
+- **HTML, CSS, Vanilla JS** — Frontend interface
 - **dotenv** — Environment variable management
 
 ---
@@ -58,75 +58,74 @@ The AI understands the brand identity including tone and visual style.
 ```bash
 git clone https://github.com/aryamusthofa/aifordevfinalproj.git
 cd aifordevfinalproj
+```
 
+### 2. Install Dependencies
 
-2. Install Dependencies
+Since `node_modules` is included in the repository, you can skip this step, but to reinstall:
+```bash
 npm install
-Environment Configuration
+```
 
-Create a .env file in the root directory and add your API key.
+### 3. Environment Configuration
+
+Create a `.env` file in the root directory and add your API key.
 
 Example:
+```env
+GEMINI_API_KEY="YOUR_API_KEY_HERE"
+MODEL="gemini-3-flash-preview"
+```
+You can obtain the API key from: [Google AI Studio](https://aistudio.google.com/)
 
-GEMINI_API_KEY=YOUR_API_KEY_HERE
+### 4. How to Run
 
-You can obtain the API key from:
-https://ai.google.dev/
+Run the application backend server using:
 
-How to Run
-
-Run the application using:
-
+```bash
 node index.js
+```
 
-The AI assistant will start and you can interact with it through the terminal.
+Once the server is running, open your web browser and navigate to:
+```text
+http://localhost:3001
+```
 
-Target Users
-Customers
+You can now interact with the 0waste AI Assistant via the web interface.
 
-People who want to purchase quality food at discounted prices.
+---
 
-Restaurant Partners
+## Target Users
 
-Restaurants or hotels that want to reduce daily food waste.
+- **Customers:** People who want to purchase quality food at discounted prices while helping the environment.
+- **Restaurant Partners:** Restaurants or hotels that want to reduce daily food waste.
 
-Author
+---
 
-Arya Musthofa Roja
+## Author
 
-Final Project — Maju Bareng AI
-Hacktiv8 x Google.org
+**Arya Musthofa Roja**
 
-Instructor:
+Final Project — Maju Bareng AI  
+Hacktiv8 x Google.org  
+
+**Instructor:**  
 Arrizal Rahmat Kurniawan (Batch 5)
 
-
 ---
 
-### Perbaikan yang sudah dilakukan
-- Menghapus **format aneh (`id="..."`)**
-- Heading **konsisten**
-- Struktur README **standar GitHub**
-- Code block **rapi**
-- Bahasa **lebih natural**
-- Tidak ada markdown rusak
+## Project Structure
 
----
-
-Example Interaction
-
-isi contoh chat AI.
-
-Atau:
-
-Project Structure
-
-contoh:
-
-
+```text
 aifordevfinalproj
 │
-├── index.js
-├── package.json
-├── .env.example
-└── README.md
+├── public/                 # Frontend Web Interface
+│   ├── index.html          # Main HTML layout
+│   ├── script.js           # Client-side chat logic
+│   └── style.css           # UI Styling
+│
+├── index.js                # Express API Backend & Gemini setup
+├── package.json            # Project dependencies & scripts
+├── test.js                 # Local test script
+└── README.md               # Project documentation
+```
