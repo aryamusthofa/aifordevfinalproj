@@ -114,6 +114,28 @@ Arrizal Rahmat Kurniawan (Batch 5)
 
 ---
 
+## Screenshots & Demo
+
+Here is a visual overview of the 0waste AI Assistant web application UI and its empathetic conversational capabilities:
+
+<details>
+<summary><b>Click to view screenshots</b></summary>
+<br>
+
+<div align="center">
+  <img src="assets-markdownreadme/Screenshot (1285).png" width="800" alt="Chat UI 1">
+  <br><br>
+  <img src="assets-markdownreadme/Screenshot (1287).png" width="800" alt="Chat UI 2">
+  <br><br>
+  <img src="assets-markdownreadme/Screenshot (1289).png" width="800" alt="Chat UI 3">
+  <br><br>
+  <img src="assets-markdownreadme/Screenshot (1290).png" width="800" alt="Chat UI 4">
+</div>
+
+</details>
+
+---
+
 ## Project Structure
 
 ```text
