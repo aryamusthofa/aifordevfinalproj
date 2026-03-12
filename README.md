@@ -123,13 +123,13 @@ Here is a visual overview of the 0waste AI Assistant web application UI and its 
 <br>
 
 <div align="center">
-  <img src="assets-markdownreadme/Screenshot (1285).png" width="800" alt="Chat UI 1">
+  <img src="assets-markdownreadme/Screenshot%20(1285).png" width="800" alt="Chat UI - Truncation Error">
   <br><br>
-  <img src="assets-markdownreadme/Screenshot (1287).png" width="800" alt="Chat UI 2">
+  <img src="assets-markdownreadme/Screenshot%20(1287).png" width="800" alt="VS Code Terminal - Backend API Testing">
   <br><br>
-  <img src="assets-markdownreadme/Screenshot (1289).png" width="800" alt="Chat UI 3">
+  <img src="assets-markdownreadme/Screenshot%20(1289).png" width="800" alt="GitHub Repository Overview">
   <br><br>
-  <img src="assets-markdownreadme/Screenshot (1290).png" width="800" alt="Chat UI 4">
+  <img src="assets-markdownreadme/Screenshot%20(1290).png" width="800" alt="Chat UI - Successful Long Response">
 </div>
 
 </details>
